@@ -24,6 +24,8 @@ Para instalar librerias se debe ingresar por terminal a la carpeta "libs"
 
 """
 import json
+
+from idna import check_label
 base_path = tmp_global_obj["basepath"]
 cur_path = base_path + "modules" + os.sep + "Windows" + os.sep + "libs" + os.sep
 sys.path.append(cur_path)
@@ -200,25 +202,31 @@ if module == "listWindows":
         raise e
 
 if module == "setForeground":
+    
     try:
         import win32gui
         title = GetParams("title")
-        def set_window_to_foreground(title):
+        checkMaximizar = GetParams("checkMaximize")
+        def set_window_to_foreground(title, checkMaximizar):
             import win32gui
             import win32con
             import win32com
+            import pywinauto
             try:
-                handle = win32gui.FindWindow(None, title)
-                if not handle:
-                    raise Exception('Could not find a window with title "{}"'.format(title))
+                if (checkMaximizar == 'True'):
+                    handle = win32gui.FindWindow(None, title)
+                    if not handle:
+                        raise Exception('Could not find a window with title "{}"'.format(title))
 
-                win32gui.ShowWindow(handle, win32con.SW_SHOWMAXIMIZED)
-                shell = win32com.client.Dispatch("WScript.Shell")
-                shell.SendKeys('%')
-                win32gui.SetForegroundWindow(handle)
+                    win32gui.ShowWindow(handle, win32con.SW_SHOWMAXIMIZED)
+                    shell = win32com.client.Dispatch("WScript.Shell")
+                    shell.SendKeys('%')
+                    win32gui.SetForegroundWindow(handle)
+                else:
+                    pywinauto.Desktop(backend="uia").windows(title=title, control_type="Window")[0].set_focus()
             except Exception as ex:
                 raise ex
-        set_window_to_foreground(title)
+        set_window_to_foreground(title, checkMaximizar)
     except Exception as e:
         print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
         PrintException()

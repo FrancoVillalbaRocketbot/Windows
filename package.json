@@ -31,6 +31,12 @@
         "title_options": "Seleccione una opción",
         "options": null
       },
+      "pr": {
+        "title": "Obter resolução de tela",
+        "description": "Retorna a resolução atual da tela",
+        "title_options": "Selecione uma opção",
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -39,12 +45,15 @@
             "placeholder": "Variable",
             "title": {
               "es": "Asignar resultado a variable:",
-              "en": "Assign result to a variable:"
+              "en": "Assign result to a variable:",
+              "pr": "Atribuir resultado a uma variável:"
             },
-            "help": {
-              "es": "Nombre de variable sin {}",
-              "en": "Variable name without {}"
+            "description": {
+              "es": "Nombre de la variable a la que se asignará el resultado",
+              "en": "Name of the variable to which the result will be assigned",
+              "pr": "Nome da variável para a qual o resultado será atribuído"
             },
+            "remove_vars": true,
             "id": "var_",
             "css": "col-md-12"
           }
@@ -76,6 +85,12 @@
         "title_options": "Seleccione una opción",
         "options": null
       },
+      "pr": {
+        "title": "Obter todas as resoluções",
+        "description": "Retorna todas as resoluções da tela permitidas",
+        "title_options": "Selecione uma opção",
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -84,12 +99,15 @@
             "placeholder": "Variable",
             "title": {
               "es": "Asignar resultado a variable:",
-              "en": "Assign result to a variable:"
+              "en": "Assign result to a variable:",
+              "pr": "Atribuir resultado a uma variável:"
             },
-            "help": {
-              "es": "Nombre de variable sin {}",
-              "en": "Variable name without {}"
+            "description": {
+              "es": "Nombre de la variable a la que se asignará el resultado",
+              "en": "Name of the variable to which the result will be assigned",
+              "pr": "Nome da variável para a qual o resultado será atribuído"
             },
+            "remove_vars": true,
             "id": "var_",
             "css": "col-md-12"
           }
@@ -121,6 +139,12 @@
         "title_options": "Seleccione una opción",
         "options": null
       },
+      "pr": {
+        "title": "Mudar resolução",
+        "description": "Muda a resolução da tela",
+        "title_options": "Selecione uma opção",
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -129,7 +153,13 @@
             "placeholder": "800,600",
             "title": {
               "es": "Resolución",
-              "en": "Resolution"
+              "en": "Resolution",
+              "pr": "Resolução"
+            },
+            "description": {
+              "es": "Resolución de pantalla",
+              "en": "Screen resolution",
+              "pr": "Resolução da tela"
             },
             "id": "resolution",
             "css": "col-md-12"
@@ -162,6 +192,12 @@
         "title_options": "Seleccione una opción",
         "options": null
       },
+      "pr": {
+        "title": "Obter nome de usuário",
+        "description": "Retorna o nome de usuário atual",
+        "title_options": "Selecione uma opção",
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -170,12 +206,15 @@
             "placeholder": "Variable",
             "title": {
               "es": "Asignar resultado a variable:",
-              "en": "Assign result to a variable:"
+              "en": "Assign result to a variable:",
+              "pr": "Atribuir resultado a uma variável:"
             },
-            "help": {
-              "es": "Nombre de variable sin {}",
-              "en": "Variable name without {}"
+            "description": {
+              "es": "Nombre de la variable",
+              "en": "Variable name",
+              "pr": "Nome da variável"
             },
+            "remove_vars": true,
             "id": "var_",
             "css": "col-md-12"
           }
@@ -207,6 +246,12 @@
         "title_options": "Seleccione una opción",
         "options": null
       },
+      "pr": {
+        "title": "Bloquear tela de Windows",
+        "description": "Bloqueia a tela de Windows",
+        "title_options": "Selecione uma opção",
+        "options": null
+      },
       "form": {
         "css": "modal-lg"
       },
@@ -236,6 +281,12 @@
         "title_options": "Seleccione una opción",
         "options": null
       },
+      "pr": {
+        "title": "Estou logado?",
+        "description": "Verifica se o usuario atual esta logado e não esta bloqueada a tela",
+        "title_options": "Selecione uma opção",
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -244,12 +295,10 @@
             "placeholder": "Variable",
             "title": {
               "es": "Asignar resultado a variable:",
-              "en": "Assign result to a variable:"
+              "en": "Assign result to a variable:",
+              "pr": "Atribuir resultado a uma variável:"
             },
-            "help": {
-              "es": "Nombre de variable sin {}",
-              "en": "Variable name without {}"
-            },
+            "remove_vars": true,
             "id": "var_",
             "css": "col-md-12"
           }
@@ -281,6 +330,12 @@
         "title_options": "Seleccione una opción",
         "options": null
       },
+      "pr": {
+        "title": "Maximizar janela",
+        "description": "Maximiza uma janela",
+        "title_options": "Selecione uma opção",
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -289,7 +344,8 @@
             "placeholder": "Titulo de la ventana",
             "title": {
               "es": "Title",
-              "en": "Title"
+              "en": "Title",
+              "pr": "Título"
             },
             "id": "title",
             "css": "col-md-12"
@@ -322,6 +378,12 @@
         "title_options": "Seleccione una opción",
         "options": null
       },
+      "pr": {
+        "title": "Restaurar janela",
+        "description": "Restaura uma janela",
+        "title_options": "Selecione uma opção",
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -330,7 +392,8 @@
             "placeholder": "Titulo de la ventana",
             "title": {
               "es": "Title",
-              "en": "Title"
+              "en": "Title",
+              "pr": "Título"
             },
             "id": "title",
             "css": "col-md-12"
@@ -363,6 +426,12 @@
         "title_options": "Seleccione una opción",
         "options": null
       },
+      "pr": {
+        "title": "Minimizar janela",
+        "description": "Minimiza uma janela",
+        "title_options": "Selecione uma opção",
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -371,7 +440,8 @@
             "placeholder": "Titulo de la ventana",
             "title": {
               "es": "Title",
-              "en": "Title"
+              "en": "Title",
+              "pr": "Título"
             },
             "id": "title",
             "css": "col-md-12"
@@ -404,6 +474,12 @@
             "title_options": "Seleccione una opción",
             "options": null
         },
+        "pr": {
+            "title": "Listar janelas abertas",
+            "description": "Lista as janelas abertas",
+            "title_options": "Selecione uma opção",
+            "options": null
+        },
         "form": {
             "css": "modal-lg",
             "inputs": [
@@ -411,11 +487,13 @@
                     "type": "input",
                     "placeholder": {
                         "es": "Variable",
-                        "en": "Variable"
+                        "en": "Variable",
+                        "pr": "Variável"
                     },
                     "title": {
                         "es": "Guardar en",
-                        "en": "Save in"
+                        "en": "Save in",
+                        "pr": "Salvar em"
                     },
                     "id": "varToSaveIn",
                     "css": "col-md-6"
@@ -424,15 +502,18 @@
                     "type": "checkbox",
                     "placeholder": {
                         "es": "Checkbox",
-                        "en": "Checkbox"                        
+                        "en": "Checkbox",
+                        "pr": "Checkbox"
                     },
                     "title": {
                         "es": "Desea los handles?",
-                        "en": "Do you want the handles also?"
+                        "en": "Do you want the handles also?",
+                        "pr": "Deseja os handles também?"
                     },
                     "help": {
                         "es": "Marcar si lo desea",
-                        "en": "Check if you want them"
+                        "en": "Check if you want them",
+                        "pr": "Marque se quiser"
                     },
                     "id": "checkHandles",
                     "css": "col-md-6"
@@ -441,11 +522,13 @@
                     "type": "input",
                     "placeholder": {
                         "es": "Palabra a buscar",
-                        "en": "Find word"
+                        "en": "Find word",
+                        "pr": "Palavra a buscar"
                     },
                     "title": {
                         "es": "Filtro",
-                        "en": "Filter"
+                        "en": "Filter",
+                        "pr": "Filtro"
                     },
                     "id": "varFilter",
                     "css": "col-md-6"
@@ -478,6 +561,12 @@
         "title_options": "Seleccione una opción",
         "options": null
       },
+      "pr": {
+        "title": "Traer janela ao frente",
+        "description": "Trazer janela ao frente",
+        "title_options": "Selecione uma opção",
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -486,10 +575,27 @@
             "placeholder": "Titulo de la ventana",
             "title": {
               "es": "Title",
-              "en": "Title"
+              "en": "Title",
+              "pr": "Titulo"
             },
             "id": "title",
             "css": "col-md-12"
+          },
+          {
+            "type": "checkbox",
+            "placeholder": "Checkbox",
+            "title": {
+              "es": "Maximizar",
+              "en": "Maximize",
+              "pr": "Maximizar"
+            },
+            "help": {
+              "es": "Marcar si lo desea",
+              "en": "Check if you want them",
+              "pr": "Marcar se quiser"
+            },
+            "id": "checkMaximize",
+            "css": "col-md-6"
           }
         ]
       },
@@ -519,6 +625,12 @@
         "title_options": "Seleccione una opción",
         "options": null
       },
+      "pr": {
+        "title": "Buscar janela",
+        "description": "Buscar janela por titulo",
+        "title_options": "Selecione uma opção",
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -527,7 +639,8 @@
             "placeholder": "Titulo de la ventana",
             "title": {
               "es": "Title",
-              "en": "Title"
+              "en": "Title",
+              "pr": "Titulo"
             },
             "id": "title",
             "css": "col-md-12"
@@ -537,12 +650,10 @@
             "placeholder": "Variable",
             "title": {
               "es": "Asignar resultado a variable:",
-              "en": "Assign result to a variable:"
+              "en": "Assign result to a variable:",
+              "pr": "Atribuir resultado a uma variavel:"
             },
-            "help": {
-              "es": "Nombre de variable sin {}",
-              "en": "Variable name without {}"
-            },
+            "remove_vars": true,
             "id": "var_",
             "css": "col-md-12"
           }
@@ -574,6 +685,12 @@
         "title_options": "Seleccione una opción",
         "options": null
       },
+      "pr": {
+        "title": "Obter estado servico",
+        "description": "Obter estado de um servico",
+        "title_options": "Selecione uma opção",
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -582,7 +699,8 @@
             "placeholder": "Titulo del servicio",
             "title": {
               "es": "Title",
-              "en": "Title"
+              "en": "Title",
+              "pr": "Titulo"
             },
             "id": "title",
             "css": "col-md-12"
@@ -592,12 +710,10 @@
             "placeholder": "Variable",
             "title": {
               "es": "Asignar resultado a variable:",
-              "en": "Assign result to a variable:"
+              "en": "Assign result to a variable:",
+              "pr": "Atribuir resultado a uma variavel:"
             },
-            "help": {
-              "es": "Nombre de variable sin {}",
-              "en": "Variable name without {}"
-            },
+            "remove_vars": true,
             "id": "var_",
             "css": "col-md-12"
           }
@@ -629,6 +745,12 @@
         "title_options": "Seleccione una opción",
         "options": null
       },
+      "pr": {
+        "title": "Iniciar servico",
+        "description": "Iniciar um servico",
+        "title_options": "Selecione uma opção",
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -637,7 +759,8 @@
             "placeholder": "Titulo del servicio",
             "title": {
               "es": "Title",
-              "en": "Title"
+              "en": "Title",
+              "pr": "Titulo"
             },
             "id": "title",
             "css": "col-md-12"
@@ -647,12 +770,10 @@
             "placeholder": "Variable",
             "title": {
               "es": "Asignar resultado a variable:",
-              "en": "Assign result to a variable:"
+              "en": "Assign result to a variable:",
+              "pr": "Atribuir resultado a uma variavel:"
             },
-            "help": {
-              "es": "Nombre de variable sin {}",
-              "en": "Variable name without {}"
-            },
+            "remove_vars": true,
             "id": "var_",
             "css": "col-md-12"
           }
@@ -684,6 +805,12 @@
         "title_options": "Seleccione una opción",
         "options": null
       },
+      "pr": {
+        "title": "Parar servico",
+        "description": "Parar um servico",
+        "title_options": "Selecione uma opção",
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -692,7 +819,8 @@
             "placeholder": "Titulo del servicio",
             "title": {
               "es": "Title",
-              "en": "Title"
+              "en": "Title",
+              "pr": "Titulo"
             },
             "id": "title",
             "css": "col-md-12"
@@ -702,12 +830,10 @@
             "placeholder": "Variable",
             "title": {
               "es": "Asignar resultado a variable:",
-              "en": "Assign result to a variable:"
+              "en": "Assign result to a variable:",
+              "pr": "Atribuir resultado a uma variavel:"
             },
-            "help": {
-              "es": "Nombre de variable sin {}",
-              "en": "Variable name without {}"
-            },
+            "remove_vars": true,
             "id": "var_",
             "css": "col-md-12"
           }
@@ -739,6 +865,12 @@
         "title_options": "Seleccione una opción",
         "options": null
       },
+      "pr": {
+        "title": "Mover e redimensionar janela",
+        "description": "Mudar a posição e dimensões de uma janela obtida por título",
+        "title_options": "Selecione uma opção",
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -747,7 +879,8 @@
             "placeholder": "Titulo del servicio",
             "title": {
               "es": "Title",
-              "en": "Title"
+              "en": "Title",
+              "pr": "Titulo"
             },
             "id": "title",
             "css": "col-md-12"
@@ -757,7 +890,8 @@
             "placeholder": "0,0",
             "title": {
               "es": "Coordenadas (x, y):",
-              "en": "Coordinates (x, y):"
+              "en": "Coordinates (x, y):",
+              "pr": "Coordenadas (x, y):"
             },
             "id": "coordinates",
             "css": "col-md-6"
@@ -767,7 +901,8 @@
             "placeholder": "0,0",
             "title": {
               "es": "Dimensiones (Ancho, Alto):",
-              "en": "Dimension (Width, Height):"
+              "en": "Dimension (Width, Height):",
+              "pr": "Dimensões (Largura, Altura):"
             },
             "id": "size",
             "css": "col-md-6"
